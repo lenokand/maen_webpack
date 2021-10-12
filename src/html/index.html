@@ -1,53 +1,1170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-    <link rel="manifest" href="icons/site.webmanifest">
+    <title>Maen</title>
+    <link rel="icon" href="./icons/favicon.ico" type="image/x-icon">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="bundle.css">
 </head>
 
-<body class="bg-light">
+<body class="">
+    <section class="main_screen">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary header shadow-sm">
-        <div class="container">
-            <a class="h2 text-decoration-none text-white" href="#">eStore</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-pills mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/" data-route>Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/cart" data-route>Cart</a>
-                    </li>
-                </ul>
-                <div class="dropdown ms-lg-5 cart-informer" id="cart-informer">
-                    <a class="btn btn-secondary dropdown-toggle btn-lg" href="#" role="button" id="dropdownMenuLink"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-cart"></i>
-                        <span class="badge bg-primary rounded-pill"></span>
+        <header id='header'>
+            <!-- <div class="wrapper" id="menu"> -->
+                <menu class="container" >
+                    <div class="menu_button">
+                        <button class=" " id="burger-btn">
+                            <img src="./products/menu.svg" alt="">
+                        </button>
+                    </div>
+    
+    
+                    <a href="/" class="logo"><img src="./products/logo.svg" alt=""></a>
+                    <div class="submenu">
+                        <!-- <a href="#"  class="submenu-row question-row">
+                            Задать вопрос
+                        </a> -->
+                        <a href="#" class="submenu-row size">
+                            Размерная сетка
+                        </a>
+                        <!-- <div class="submenu-row language_row">
+                            <a href="#" class="language active">Рус </a> |
+                            <a href="#" class="language">Укр </a>
+                        </div> -->
+                    </div>
+    
+                </menu>
+            <!-- </div> -->
+           
+
+
+            <div class="hiden_menu " id="hiden_menu">
+                <menu class="container">
+                    <div class="menu_button">
+                        <button class="close-menu " id="close-menu">
+                            <img src="./products/close.svg" alt="">
+                        </button>
+                    </div>
+
+
+                 <a href="" class="logo"><img src="./products/logo.svg" alt=""></a>   
+                    <div class="submenu">
+                        <!-- <a href="#" class="submenu-row">
+                            Задать вопрос
+                        </a> -->
+                        <a href="#" class="submenu-row size">
+                            Размерная сетка
+                        </a>
+                        <!-- <div class="submenu-row">
+                            <a href="#" class="language active">Рус </a> |
+                            <a href="#" class="language">Укр </a>
+                        </div> -->
+                    </div>
+
+                </menu>
+                <div class="menu-items container">
+                    <a href="#" class="menu-block_item">КАТАЛОГ ТОВАРОВ</a>
+                    <a href="#" class="menu-block_item">О БРЕНДЕ</a>
+                    <a href="#" class="menu-block_item">ПРЕИМУЩЕСТВА</a>
+                    <a href="#" class="menu-block_item">ОТЗЫВЫ</a>
+                    <a href="#" class="menu-block_item">ПРОГРАММА ЛОЯЛЬНОСТИ</a>
+                    <a href="#" class="menu-block_item">КАК ЗАКАЗАТЬ</a>
+                    <a href="#" class="menu-block_item">ВОЗВРАТ И ОБМЕН</a>
+                    <a href="#" class="menu-block_item">ДОСТАВКА И ОПЛАТА</a>
+                    <div class="menu-block_item bold telephone">СВЯЗАТЬСЯ С НАМИ:</div>
+                    <a href="tel:+38(093)10-20-221" class="menu-block_item">+38(093) 10-20-221</a>
+                    <div class="menu-block_item bold">НАПИСАТЬ НАМ</div>
+                    <a href="tel:+38(093)10-20-221" class="menu-block_item">
+                        <img src="./products/tm.png" alt="">
+
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu-dark bg-secondary" aria-labelledby="dropdownMenuLink"></ul>
+                </div>
+
+            </div>
+        </header>
+
+
+
+        <div class=" content">
+            <img class="screen_xl" src="./products/firstscreen.png" alt="">
+            <img class="screen_sm" src="./products/main_screen_sm.png" alt="">
+            <!-- <div class="title">
+                Стильный лонгслив Landos
+            </div>
+            <div class="subtitle">
+                из мягкого трикотажа
+            </div>
+            <div class="utp">
+                <ul>
+                    <li>Всегда в тренде</li>
+                    <li>Только натуральные материалы</li>
+                    <li>Дышат и не парят</li>
+                </ul>
+            </div> -->
+            <!-- <a href="#modal-call" data-fancybox data-touch="false" class="modal_btn">Оставить заявку</a> -->
+
+        </div>
+        <div id="modal-call">
+            <div class="wrapper">
+                <div class="title">Задать вопрос</div>
+                <div class="subtitle">
+                    Оставьте свои контакты и мы свяжемся с Вами
+                    в самое ближайшее время
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Имя">
+                    <input type="tel" placeholder="Телефон">
+                    <textarea name="" placeholder="Сообщение" id="" cols="30" rows="10"></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="catalog">
+
+        <div class="container">
+            <div class="title">
+                "В пошиве одежды мы используем органический хлопок. Она более мягкая, отличается высокой прочностью и
+                длительным сроком службы и гораздо лучше пропускает воздух "
+            </div>
+            <div class="catalog-items">
+                <div class="catalog-item">
+                    <div class="image_item">
+                        <span class="sale">-50%</span>
+
+                        <img class="main-item" src="./products/catalog_item1.png" alt="">
+
+
+                        <a class="img-link" href="cart.html">
+
+                            <img class="secondary-item" src="./products/catalog_item2.png" alt="">
+                        </a>
+
+                        <a href="./products/catalog_item2.png" data-fancybox class="open_img">
+                            <img src="./products/arrow_catalog.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item_sign">
+
+                        <a href="cart.html" class="name">Лонгслив Landos Черный</a>
+                        <div class="material">Материал: Трикотаж </div>
+                        <div class="price">690 грн <span>1100 грн</span> </div>
+                        <a href="cart.html" class="buy">Купить</a>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="image_item">
+                        <span class="sale">-50%</span>
+
+                        <img class="main-item" src="./products/catalog_item1.png" alt="">
+
+
+                        <a class="img-link" href="cart.html">
+
+                            <img class="secondary-item" src="./products/catalog_item2.png" alt="">
+                        </a>
+                        <a href="./products/catalog_item2.png" data-fancybox class="open_img">
+                            <img src="./products/arrow_catalog.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item_sign">
+                        <a href="cart.html" class="name">Лонгслив Landos Черный</a>
+                        <div class="material">Материал: Трикотаж </div>
+                        <div class="price">690 грн <span>1100 грн</span> </div>
+                        <a href="cart.html" class="buy">Купить</a>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="image_item">
+                        <span class="sale">-50%</span>
+
+                        <img class="main-item" src="./products/catalog_item1.png" alt="">
+
+
+                        <a class="img-link" href="cart.html">
+
+                            <img class="secondary-item" src="./products/catalog_item2.png" alt="">
+                        </a>
+                        <a href="./products/catalog_item2.png" data-fancybox class="open_img">
+                            <img src="./products/arrow_catalog.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item_sign">
+                        <a href="cart.html" class="name">Лонгслив Landos Черный</a>
+                        <div class="material">Материал: Трикотаж </div>
+                        <div class="price">690 грн <span>1100 грн</span> </div>
+                        <a href="cart.html" class="buy">Купить</a>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="image_item">
+                        <span class="sale">-50%</span>
+
+                        <img class="main-item" src="./products/catalog_item1.png" alt="">
+
+
+
+                        <a class="img-link" href="cart.html">
+
+                            <img class="secondary-item" src="./products/catalog_item2.png" alt="">
+                        </a>
+                        <a href="./products/catalog_item2.png" data-fancybox class="open_img">
+                            <img src="./products/arrow_catalog.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item_sign">
+                        <a href="cart.html" class="name">Лонгслив Landos Черный</a>
+                        <div class="material">Материал: Трикотаж </div>
+                        <div class="price">690 грн <span>1100 грн</span> </div>
+                        <a href="cart.html" class="buy">Купить</a>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="image_item">
+                        <span class="sale">-50%</span>
+
+                        <img class="main-item" src="./products/catalog_item1.png" alt="">
+
+
+
+                        <a class="img-link" href="cart.html">
+
+                            <img class="secondary-item" src="./products/catalog_item2.png" alt="">
+                        </a>
+                        <a href="./products/catalog_item2.png" data-fancybox class="open_img">
+                            <img src="./products/arrow_catalog.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item_sign">
+                        <a href="cart.html" class="name">Лонгслив Landos Черный</a>
+                        <div class="material">Материал: Трикотаж </div>
+                        <div class="price">690 грн <span>1100 грн</span> </div>
+                        <a href="cart.html" class="buy">Купить</a>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="image_item">
+                        <span class="sale">-50%</span>
+
+                        <img class="main-item" src="./products/catalog_item1.png" alt="">
+
+
+
+                        <a class="img-link" href="cart.html">
+
+                            <img class="secondary-item" src="./products/catalog_item2.png" alt="">
+                        </a>
+                        <a href="./products/catalog_item2.png" data-fancybox class="open_img">
+                            <img src="./products/arrow_catalog.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item_sign">
+                        <a href="cart.html" class="name">Лонгслив Landos Черный</a>
+                        <div class="material">Материал: Трикотаж </div>
+                        <div class="price">690 грн <span>1100 грн</span> </div>
+                        <a href="cart.html" class="buy">Купить</a>
+                    </div>
                 </div>
             </div>
+
         </div>
-    </nav>
+    </section>
+    <section class="video-block">
+        <div class="container">
+            <video controls="controls">
+                <source src="./products/mp4.mp4" type='video/ogg; codecs="theora, vorbis"'>
 
-    <div class="container bg-white shadow-sm my-3 py-3 rounded">
-        <div class="row g-3" id="route-view"></div>
+                Просмотр video не поддерживается вашим браузером.
+
+            </video>
+        </div>
+    </section>
+
+
+    <section class="blackfon">
+        <div class="black-left">
+            <img src="./products/black-fon.png" alt="">
+        </div>
+        <div class="black-right">
+            <div class="title">В нашей одежде мы используем органический хлопок!</div>
+
+            <div class="subtitle">Качества ткани: </div>
+            <p><b>Гипоаллергенность</b> достигается благодаря отсутствию в органической сырье токсичных химикатов,
+                используемых для борьбы с сорняками, вредителями и болезнями.
+            </p>
+            <br>
+            <p>
+                <b>Гигиеничность</b> обеспечивается свойствами естественной мембраны: натуральная ткань не создает
+                «парникового" эффекта на поверхности тела под одеждой, что позволяет коже свободно дышать. Ткань
+                исключает перегрев тела в жаркую погоду и переохлаждения в холодное время года.
+            </p>
+            <br>
+            <p>
+                <b>Защита.</b> Ткань защищает кожу от вредного воздействия внешней среды (солей тяжелых металлов,
+                неблагоприятного сочетания температуры и влажности, повреждающего эффекта избыточного ультрафиолетового
+                облучения).
+            </p>
+            <br>
+            <p>
+                <b>К дополнительным преимуществам</b> одежды относятся освежающая и смягчающее действие живой ткани,
+                благотворно плывущие на работу тела в течение дня, видсутснисть раздражения на коже и общий тонизирующий
+                эффект.
+            </p>
+        </div>
+    </section>
+
+
+    <section class="brand">
+        <div class="container">
+            <div class="left-part">
+                <div class="title">
+                    БРЕНД MEAN
+                </div>
+                <img class="package" src="./products/package.png" alt="">
+                <img class="koma" src="./products/koma.png" alt="">
+                <div class="content">
+                    Мы украинский бренд и гарантируем отличное качество. Весь наш товар проходит тройной контроль
+                    качества, мы используем новейшее оборудование и персонал с опытом более 10 лет. Мы используем только
+                    натуральные материалы, которые дышат и загривають вас!
+                </div>
+            </div>
+            <div class="right-part">
+                <img src="./products/package.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="characters">
+        <div class="container">
+            <div class="left-part">
+                <img src="./products/charact.png" alt="">
+            </div>
+            <div class="right-part">
+                <div class="title">
+                    СТОЙКИЙ ЦВЕТ
+                </div>
+                <div class="content">
+                    Наши футболки не меняют цвет и размер при стирке (главное соблюдать правила стирки). При правильной
+                    эксплуатации и стирки, Вы сможете носить наши футболки много лет, и они все равно будут выглядеть
+                    отлично!
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="characters characters-second">
+        <div class="container">
+
+            <div class="right-part">
+                <div class="title">
+                    УНИВЕРСАЛЬНЫЕ РАЗМЕРЫ
+                </div>
+                <div class="content">
+                    Мы изготавливаем самые популярные модели. Главный плюс нашей одежды - его универсальность. Его можно
+                    надевать под любые образы, миксовать разные стили, и вы всегда будете выглядеть очень стильно! Вы
+                    можете одевать футболки на различные события: работа, учеба, отдых, важное событие или просто
+                    прогулка.
+                </div>
+            </div>
+            <div class="left-part">
+                <img src="./products/charact2.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="plus">
+        <div class="container">
+            <div class="title">
+                НАШИ ПРЕИМУЩЕСТВА
+            </div>
+            <div class="wrapper">
+                <div class="left-part">
+                    <li class="plus-item"> Фабричное качество
+
+                    </li>
+                    <li class="plus-item"> Лучшие проверенные лекала
+
+
+
+                    </li>
+                    <li class="plus-item"> Материал дышит и не парит
+
+
+
+                    </li>
+                    <li class="plus-item"> Яркий, насыщенный цвет (даже после стирки)
+
+
+
+                    </li>
+                    <li class="plus-item"> Не теряет форму </li>
+                </div>
+                <div class="right-part">
+                    <li class="plus-item"> Наложенный платеж (оплата при получении) </li>
+                    <li class="plus-item"> Скидки при покупке от 2-ух единиц </li>
+                    <li class="plus-item"> Больше 100 счастливых отзывов </li>
+                    <li class="plus-item"> Стильные и всегда в моде </li>
+                    <li class="plus-item"> Приятные к телу и мягкие </li>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="catalog">
+
+        <div class="container">
+
+            <div class="catalog-items">
+                <div class="catalog-item">
+                    <div class="image_item">
+                        <span class="sale">-50%</span>
+
+                        <img class="main-item" src="./products/catalog_item1.png" alt="">
+
+
+
+                        <img class="secondary-item" src="./products/catalog_item2.png" alt="">
+                        <a href="./products/catalog_item2.png" data-fancybox class="open_img">
+                            <img src="./products/arrow_catalog.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item_sign">
+                        <div class="name">Лонгслив Landos Черный</div>
+                        <div class="material">Материал: Трикотаж </div>
+                        <div class="price">690 грн <span>1100 грн</span> </div>
+                        <button class="buy">Купить</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="image_item">
+                        <span class="sale">-50%</span>
+
+                        <img class="main-item" src="./products/catalog_item1.png" alt="">
+
+
+
+                        <img class="secondary-item" src="./products/catalog_item2.png" alt="">
+                        <a href="./products/catalog_item2.png" data-fancybox class="open_img">
+                            <img src="./products/arrow_catalog.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item_sign">
+                        <div class="name">Лонгслив Landos Черный</div>
+                        <div class="material">Материал: Трикотаж </div>
+                        <div class="price">690 грн <span>1100 грн</span> </div>
+                        <button class="buy">Купить</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="image_item">
+                        <span class="sale">-50%</span>
+
+                        <img class="main-item" src="./products/catalog_item1.png" alt="">
+
+
+
+                        <img class="secondary-item" src="./products/catalog_item2.png" alt="">
+                        <a href="./products/catalog_item2.png" data-fancybox class="open_img">
+                            <img src="./products/arrow_catalog.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item_sign">
+                        <div class="name">Лонгслив Landos Черный</div>
+                        <div class="material">Материал: Трикотаж </div>
+                        <div class="price">690 грн <span>1100 грн</span> </div>
+                        <button class="buy">Купить</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="image_item">
+                        <span class="sale">-50%</span>
+
+                        <img class="main-item" src="./products/catalog_item1.png" alt="">
+
+
+
+                        <img class="secondary-item" src="./products/catalog_item2.png" alt="">
+                        <a href="./products/catalog_item2.png" data-fancybox class="open_img">
+                            <img src="./products/arrow_catalog.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item_sign">
+                        <div class="name">Лонгслив Landos Черный</div>
+                        <div class="material">Материал: Трикотаж </div>
+                        <div class="price">690 грн <span>1100 грн</span> </div>
+                        <button class="buy">Купить</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="image_item">
+                        <span class="sale">-50%</span>
+
+                        <img class="main-item" src="./products/catalog_item1.png" alt="">
+
+
+
+                        <img class="secondary-item" src="./products/catalog_item2.png" alt="">
+                        <a href="./products/catalog_item2.png" data-fancybox class="open_img">
+                            <img src="./products/arrow_catalog.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item_sign">
+                        <div class="name">Лонгслив Landos Черный</div>
+                        <div class="material">Материал: Трикотаж </div>
+                        <div class="price">690 грн <span>1100 грн</span> </div>
+                        <button class="buy">Купить</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="image_item">
+                        <span class="sale">-50%</span>
+
+                        <img class="main-item" src="./products/catalog_item1.png" alt="">
+
+
+
+                        <img class="secondary-item" src="./products/catalog_item2.png" alt="">
+                        <a href="./products/catalog_item2.png" data-fancybox class="open_img">
+                            <img src="./products/arrow_catalog.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item_sign">
+                        <div class="name">Лонгслив Landos Черный</div>
+                        <div class="material">Материал: Трикотаж </div>
+                        <div class="price">690 грн <span>1100 грн</span> </div>
+                        <button class="buy">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="customers">
+        <div class="container">
+
+            <div class="title">ФОТО ДОВОЛЬНЫХ КЛИЕНТОВ</div>
+
+            <div class="slider-customers_photo ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+
+                        <a href="./products/customers.png" data-fancybox class="open_img">
+                            <img src="./products/customers.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./products/customers.png" data-fancybox class="open_img">
+                            <img src="./products/customers.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./products/customers.png" data-fancybox class="open_img">
+                            <img src="./products/customers.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./products/customers.png" data-fancybox class="open_img">
+                            <img src="./products/customers.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./products/customers.png" data-fancybox class="open_img">
+                            <img src="./products/customers.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./products/customers.png" data-fancybox class="open_img">
+                            <img src="./products/customers.png" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="swiper slider-review ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <img src="./products/rev1.png" alt="">
+                            <div class="text-block" style="">
+                                <!-- <img class="background" src="./products/text_bg.png" alt=""> -->
+                                <b>Елена Москаленко</b>
+                                <br>
+                                Я натикнулась на ваші лонгсліви після довгих пошуків і дуже рада, що знайшла їх! Вони
+                                ідеально підходять для будь-яких ситуацій та під любу одежу, особливо джинси та джінсові
+                                шорти!!!
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <img src="./products/rev1.png" alt="">
+                            <div class="text-block">
+                                <!-- <img class="background" src="./products/text_bg.png" alt=""> -->
+                                <b>Елена Москаленко</b>
+                                <br>
+                                Я натикнулась на ваші лонгсліви після довгих пошуків і дуже рада, що знайшла їх! Вони
+                                ідеально підходять для будь-яких ситуацій та під любу одежу, особливо джинси та джінсові
+                                шорти!!!
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <img src="./products/rev1.png" alt="">
+                            <div class="text-block">
+                                <!-- <img class="background" src="./products/text_bg.png" alt=""> -->
+                                <b>Елена Москаленко</b>
+                                <br>
+                                Я натикнулась на ваші лонгсліви після довгих пошуків і дуже рада, що знайшла їх! Вони
+                                ідеально підходять для будь-яких ситуацій та під любу одежу, особливо джинси та джінсові
+                                шорти!!!
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="navigation">
+
+                    <div class="swiper-button-prev">
+                        <img src="./products/arrow-left-circle.png" alt="">
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="./products/arrow-right-circle.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="loyal">
+        <div class="container">
+            <div class="title">
+                ПРОГРАММА ЛОЯЛЬНОСТИ
+            </div>
+            <div class="loyal-block">
+
+                <div class="block-item">
+                    <div class="wrapper">
+                        <div class="price">690 грн <span></span></div>
+                        <div class="item-desc">
+                            При заказе 1 единицы товара
+                        </div>
+                    </div>
+
+
+                    <a href="#" class="primary-btn">Выбрать товар</a>
+                </div>
+
+                <div class="block-item">
+                    <div class="wrapper">
+                        <div class="price">1380 грн <span>1180 грн</span></div>
+                        <div class="item-desc">
+                            При заказе 2 единиц товара <br>
+                            Вы экономите 200 грн
+                        </div>
+                    </div>
+
+                    <a href="#" class="primary-btn">Выбрать товар</a>
+                </div>
+
+                <div class="block-item">
+                    <div class="wrapper">
+                        <div class="price">1570 грн <span>2070 грн</span></div>
+                        <div class="item-desc">
+                            При заказе 3 единиц товара <br>
+                            Вы экономите 500 грн
+                        </div>
+                    </div>
+
+                    <a href="#" class="primary-btn">Выбрать товар</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="order">
+        <div class="container">
+            <div class="title">
+                КАК СДЕЛАТЬ ЗАКАЗ
+            </div>
+            <div class="order-steps">
+
+                <div class="order-step">
+                    <div class="number">
+                        1
+                    </div>
+                    <div class="step-title">
+                        ОСТАВЬТЕ ЗАЯВКУ
+                        НА САЙТЕ
+                    </div>
+                    <div class="step-subtitle">
+                        Укажите свое имя и номер телефона
+                    </div>
+                </div>
+
+                <div class="order-step">
+                    <div class="number">
+                        2
+                    </div>
+                    <div class="step-title">
+                        СВЯЗЬ
+                        С МЕНЕДЖЕРОМ
+
+                    </div>
+                    <div class="step-subtitle">
+
+                        Менеджер ответит на все Ваши вопросы и уточнит детали по доставке
+                    </div>
+                </div>
+                <div class="order-step">
+                    <div class="number">
+                        3
+                    </div>
+                    <div class="step-title">
+                        ДОСТАВКА НА
+                        НОВУЮ ПОЧТУ
+
+                    </div>
+                    <div class="step-subtitle">
+
+                        Мы отправляем товар Новой почтой на удобное для Вас отделение
+                    </div>
+                </div>
+                <div class="order-step">
+                    <div class="number">
+                        4
+                    </div>
+                    <div class="step-title">
+                        ПРОВЕРКА ТОВАРА
+                        И ОПЛАТА
+
+                    </div>
+                    <div class="step-subtitle">
+
+
+                        Вы осматриваете товар, после чего оплачиваете.
+                        <br> Мы уверены в качестве нашей продукции, поэтому отправляем наложным платежем
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="designed">
+        <div class="container">
+            <div class="title">
+                DESIGNED BY MAEN
+            </div>
+            <div class="subtitle">
+                <b> Остерегайтесь подделок.</b> <br>
+                Наша продукция всегда упакована в фирменный пакет, в комплекте идет фирменный бланк возврата, бирка и
+                составник
+            </div>
+
+            <div class="designed-img">
+                <img src="./products/bag.png" alt="">
+                <img src="./products/certificate.png" alt="">
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="question">
+        <div class="container">
+            <div class="title">
+                ОСТАЛИСЬ ВОПРОСЫ?
+            </div>
+            <div class="subtitle">
+                Наш менеджер поможет Вам. Жмите кнопку и оставляйте заявку ниже!
+            </div>
+            <div class="question-items">
+                <div class="question-item">
+                    <img src="./products/question1.svg" alt="">
+                    <div class="sign">
+                        Оплата <br> при получении
+                    </div>
+                </div>
+                <div class="question-item">
+                    <img src="./products/question2.svg" alt="">
+                    <div class="sign">
+                        Быстрая
+                        <br> доставка товара
+                    </div>
+                </div>
+                <div class="question-item">
+                    <img src="./products/question3.svg" alt="">
+                    <div class="sign">
+                        Возможность
+                        <br> возврата товара
+                    </div>
+                </div>
+
+            </div>
+            <a href="#modal-call" data-fancybox data-touch="false" class="modal_btn">Оставить заявку</a>
+        </div>
+    </section>
+
+
+    <section class="payment">
+        <div class="container">
+            <div class="title">
+                Оплата Visa/Mastercard
+            </div>
+            <div class="payment-content">
+                Вы можете оплатить товар на сайте банковской картой Приват24 (LiqPay) или вы можете сделать заказ товара
+                наложенным платежом. Подробнее о доставке, оплате и возврат товара <a href="#">здесь</a>
+            </div>
+            <a href="#" class="pay_btn">
+                <img src="./products/payment.png" alt="">
+
+            </a>
+
+        </div>
+    </section>
+    <footer>
+        <div>
+            Не использовать фотографии и тексты без нашего согласия
+        </div>
+        <br>
+        <div>
+            © All Right Reserved 2021 Maen. Юридический адрес в Украине: <br>
+            г. Одесса, ул. Новосельского, 81
+        </div>
+        <br>
+        <div>
+            ЧП "Проценко Игорь Анатольевич" ИНН 4356123410
+        </div>
+        <br>
+        <div>
+            Почта: <a href="mailto:hello@jetlab.com.ua">hello@jetlab.com.ua </a>
+
+        </div>
+        <div>
+            Телефон для связи: <a href="tel:+38(093)1020221">+38 (093) 10 20 221</a>
+        </div>
+        <div>
+            Мы принимаем: VISA, Mastercard, Liqpay
+        </div>
+        <br>
+        <div>
+            <a href="#">Политика конфеденциальности</a>
+        </div>
+        <div>
+            <a href=""> Публичная оферта</a>
+        </div>
+        <div>
+            <a href="">Обмен и возврат</a>
+
+        </div>
+
+    </footer>
+    <div id="btn-back-to-top">
+        <img src="./products/totop.svg" alt="">
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.9/jquery.mask.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop()) {
+                $('#btn-back-to-top').fadeIn();
+                $("#btn-back-to-top").css("display", "flex")
+            } else {
+                $('#btn-back-to-top').fadeOut();
+            }
+        });
 
+        $("#btn-back-to-top").click(function () {
+            //1 second of animation time
+            //html works for FFX but not Chrome
+            //body works for Chrome but not FFX
+            //This strange selector seems to work universally
+
+            $("html, body").animate({
+                scrollTop: 0
+            }, 1000);
+        });
+
+
+        /*
+            jQuery Masked Input Plugin
+            Copyright (c) 2007 - 2015 Josh Bush (digitalbush.com)
+            Licensed under the MIT license (http://digitalbush.com/projects/masked-input-plugin/#license)
+            Version: 1.4.1
+        */
+        ! function (a) {
+            "function" == typeof define && define.amd ? define(["jquery"], a) : a("object" == typeof exports ? require(
+                "jquery") : jQuery)
+        }(function (a) {
+            var b, c = navigator.userAgent,
+                d = /iphone/i.test(c),
+                e = /chrome/i.test(c),
+                f = /android/i.test(c);
+            a.mask = {
+                definitions: {
+                    9: "[0-9]",
+                    a: "[A-Za-z]",
+                    "*": "[A-Za-z0-9]"
+                },
+                autoclear: !0,
+                dataName: "rawMaskFn",
+                placeholder: "_"
+            }, a.fn.extend({
+                caret: function (a, b) {
+                    var c;
+                    if (0 !== this.length && !this.is(":hidden")) return "number" == typeof a ? (b =
+                        "number" == typeof b ? b : a, this.each(function () {
+                            this.setSelectionRange ? this.setSelectionRange(a, b) : this
+                                .createTextRange && (c = this.createTextRange(), c.collapse(
+                                    !0), c.moveEnd("character", b), c.moveStart(
+                                    "character", a), c.select())
+                        })) : (this[0].setSelectionRange ? (a = this[0].selectionStart, b =
+                            this[0].selectionEnd) : document.selection && document.selection
+                        .createRange && (c = document.selection.createRange(), a = 0 - c
+                            .duplicate().moveStart("character", -1e5), b = a + c.text.length), {
+                            begin: a,
+                            end: b
+                        })
+                },
+                unmask: function () {
+                    return this.trigger("unmask")
+                },
+                mask: function (c, g) {
+                    var h, i, j, k, l, m, n, o;
+                    if (!c && this.length > 0) {
+                        h = a(this[0]);
+                        var p = h.data(a.mask.dataName);
+                        return p ? p() : void 0
+                    }
+                    return g = a.extend({
+                        autoclear: a.mask.autoclear,
+                        placeholder: a.mask.placeholder,
+                        completed: null
+                    }, g), i = a.mask.definitions, j = [], k = n = c.length, l = null, a.each(c
+                        .split(""),
+                        function (a, b) {
+                            "?" == b ? (n--, k = a) : i[b] ? (j.push(new RegExp(i[b])), null ===
+                                l && (l = j.length - 1), k > a && (m = j.length - 1)) : j.push(
+                                null)
+                        }), this.trigger("unmask").each(function () {
+                        function h() {
+                            if (g.completed) {
+                                for (var a = l; m >= a; a++)
+                                    if (j[a] && C[a] === p(a)) return;
+                                g.completed.call(B)
+                            }
+                        }
+
+                        function p(a) {
+                            return g.placeholder.charAt(a < g.placeholder.length ? a : 0)
+                        }
+
+                        function q(a) {
+                            for (; ++a < n && !j[a];);
+                            return a
+                        }
+
+                        function r(a) {
+                            for (; --a >= 0 && !j[a];);
+                            return a
+                        }
+
+                        function s(a, b) {
+                            var c, d;
+                            if (!(0 > a)) {
+                                for (c = a, d = q(b); n > c; c++)
+                                    if (j[c]) {
+                                        if (!(n > d && j[c].test(C[d]))) break;
+                                        C[c] = C[d], C[d] = p(d), d = q(d)
+                                    } z(), B.caret(Math.max(l, a))
+                            }
+                        }
+
+                        function t(a) {
+                            var b, c, d, e;
+                            for (b = a, c = p(a); n > b; b++)
+                                if (j[b]) {
+                                    if (d = q(b), e = C[b], C[b] = c, !(n > d && j[d].test(e)))
+                                        break;
+                                    c = e
+                                }
+                        }
+
+                        function u() {
+                            var a = B.val(),
+                                b = B.caret();
+                            if (o && o.length && o.length > a.length) {
+                                for (A(!0); b.begin > 0 && !j[b.begin - 1];) b.begin--;
+                                if (0 === b.begin)
+                                    for (; b.begin < l && !j[b.begin];) b.begin++;
+                                B.caret(b.begin, b.begin)
+                            } else {
+                                for (A(!0); b.begin < n && !j[b.begin];) b.begin++;
+                                B.caret(b.begin, b.begin)
+                            }
+                            h()
+                        }
+
+                        function v() {
+                            A(), B.val() != E && B.change()
+                        }
+
+                        function w(a) {
+                            if (!B.prop("readonly")) {
+                                var b, c, e, f = a.which || a.keyCode;
+                                o = B.val(), 8 === f || 46 === f || d && 127 === f ? (b = B
+                                        .caret(), c = b.begin, e = b.end, e - c === 0 && (c =
+                                            46 !== f ? r(c) : e = q(c - 1), e = 46 === f ? q(
+                                                e) : e), y(c, e), s(c, e - 1), a
+                                        .preventDefault()) :
+                                    13 === f ? v.call(this, a) : 27 === f && (B.val(E), B.caret(
+                                        0, A()), a.preventDefault())
+                            }
+                        }
+
+                        function x(b) {
+                            if (!B.prop("readonly")) {
+                                var c, d, e, g = b.which || b.keyCode,
+                                    i = B.caret();
+                                if (!(b.ctrlKey || b.altKey || b.metaKey || 32 > g) && g &&
+                                    13 !== g) {
+                                    if (i.end - i.begin !== 0 && (y(i.begin, i.end), s(i.begin,
+                                            i.end - 1)), c = q(i.begin - 1), n > c && (d =
+                                            String.fromCharCode(g), j[c].test(d))) {
+                                        if (t(c), C[c] = d, z(), e = q(c), f) {
+                                            var k = function () {
+                                                a.proxy(a.fn.caret, B, e)()
+                                            };
+                                            setTimeout(k, 0)
+                                        } else B.caret(e);
+                                        i.begin <= m && h()
+                                    }
+                                    b.preventDefault()
+                                }
+                            }
+                        }
+
+                        function y(a, b) {
+                            var c;
+                            for (c = a; b > c && n > c; c++) j[c] && (C[c] = p(c))
+                        }
+
+                        function z() {
+                            B.val(C.join(""))
+                        }
+
+                        function A(a) {
+                            var b, c, d, e = B.val(),
+                                f = -1;
+                            for (b = 0, d = 0; n > b; b++)
+                                if (j[b]) {
+                                    for (C[b] = p(b); d++ < e.length;)
+                                        if (c = e.charAt(d - 1), j[b].test(c)) {
+                                            C[b] = c, f = b;
+                                            break
+                                        } if (d > e.length) {
+                                        y(b + 1, n);
+                                        break
+                                    }
+                                } else C[b] === e.charAt(d) && d++, k > b && (f = b);
+                            return a ? z() : k > f + 1 ? g.autoclear || C.join("") === D ? (B
+                                .val() && B.val(""), y(0, n)) : z() : (z(), B.val(B.val()
+                                .substring(0, f + 1))), k ? b : l
+                        }
+                        var B = a(this),
+                            C = a.map(c.split(""), function (a, b) {
+                                return "?" != a ? i[a] ? p(b) : a : void 0
+                            }),
+                            D = C.join(""),
+                            E = B.val();
+                        B.data(a.mask.dataName, function () {
+                                return a.map(C, function (a, b) {
+                                    return j[b] && a != p(b) ? a : null
+                                }).join("")
+                            }), B.one("unmask", function () {
+                                B.off(".mask").removeData(a.mask.dataName)
+                            }).on("focus.mask", function () {
+                                if (!B.prop("readonly")) {
+                                    clearTimeout(b);
+                                    var a;
+                                    E = B.val(), a = A(), b = setTimeout(function () {
+                                        B.get(0) === document.activeElement && (z(),
+                                            a == c.replace("?", "").length ? B
+                                            .caret(0, a) : B.caret(a))
+                                    }, 10)
+                                }
+                            }).on("blur.mask", v).on("keydown.mask", w).on("keypress.mask", x)
+                            .on("input.mask paste.mask", function () {
+                                B.prop("readonly") || setTimeout(function () {
+                                    var a = A(!0);
+                                    B.caret(a), h()
+                                }, 0)
+                            }), e && f && B.off("input.mask").on("input.mask", u), A()
+                    })
+                }
+            })
+        });
+        // маска для телефона
+        $.fn.setCursorPosition = function (pos) {
+            if ($(this).get(0).setSelectionRange) {
+                $(this).get(0).setSelectionRange(pos, pos);
+            } else if ($(this).get(0).createTextRange) {
+                var range = $(this).get(0).createTextRange();
+                range.collapse(true);
+                range.moveEnd('character', pos);
+                range.moveStart('character', pos);
+                range.select();
+            }
+        };
+
+        $("input[type='tel'] ").click(function () {
+            $(this).setCursorPosition(4);
+        }).mask("+38(999) 999-99-99", );
+    </script>
 </body>
 
 </html>
